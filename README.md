@@ -35,7 +35,7 @@ Passo 8 (execute o comando): npm install
 
 ## Execução do projeto
 
-<h5><b>2. Ferramentas necessárias</b></h5>
+<h5><b>2. Procedimentos de execução</b></h5>
 
 Para execução do projeto abra dois terminais de comando distintos.
 No primeiro terminal execute o comando: **npm run serve**
