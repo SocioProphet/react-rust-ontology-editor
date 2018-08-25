@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>SustenAgro</title>
+
+    <meta name="viewport" content="user-scalable=0, initial-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <script src="https://unpkg.com/react@latest/umd/react.development.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@material-ui/core/umd/material-ui.development.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css"  />
+    <!-- Web components polyfill library-->
+    <script src="js/components/webcomponentsjs/webcomponents-loader.js"></script>
+
+</head>
+<body>
+<div id="app"></div>
+<div id="app1" class="app-content"></div>
+
+<script src="js/jsonld.js"></script>
+<script src="js/jsonld-helpers.js"></script>
+<script src="js/components/cmp-categorical.js"></script>
+<script src="js/components/d3-render.js"></script>
+<script>
+     const {
+    //     Button,
+         colors,
+         createMuiTheme,
+
+    //     CssBaseline,
+    //     Dialog,
+    //     DialogActions,
+    //     DialogContent,
+    //     DialogContentText,
+    //     DialogTitle,
+    //     Icon,
+    //     MuiThemeProvider,
+    //     Typography,
+    //     withStyles,
+     } = window['material-ui'];
+     //const a = window['material-ui'].Dialog;
+
+     const theme = createMuiTheme({
+        palette: {
+            primary: {
+                light: colors.green[300],
+                main: colors.green[500],
+                dark: colors.green[700],
+            },
+            secondary: {
+                light: colors.purple[300],
+                main: colors.purple[500],
+                dark: colors.purple[700],
+            },
+        },
+    });
+    const styles = theme => ({
+        root: {
+            textAlign: 'center',
+            paddingTop: theme.spacing.unit * 20,
+        },
+        icon: {
+            marginRight: theme.spacing.unit,
+        },
+    });
+
+    const react_cmps = {};
+</script>
+<script src="js/app.js"></script>
+<script>
+    Rust.decisioner.then( function( teste ) {
+        console.log(teste);
+        console.log( teste.hash( "Hello world!" ) );
+    });
+</script>
+</body>
+</html>
+

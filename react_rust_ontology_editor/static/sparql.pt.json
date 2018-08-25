@@ -1,0 +1,2022 @@
+{
+  "@graph" : [ {
+    "@id" : "http://purl.org/biodiv/semanticUI#Feature",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#Variable", "http://semantic.icmc.usp.br/sustenagro#Indicator", "http://purl.org/biodiv/semanticUI#Weighted" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Característica"
+    }
+  }, {
+    "@id" : "http://purl.org/biodiv/semanticUI#Weighted",
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Ponderado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AbsoluteEmissionsOfGreenhouseGases",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#AbsoluteEmissionsOfGreenhouseGases-1", "http://semantic.icmc.usp.br/sustenagro#AbsoluteEmissionsOfGreenhouseGases-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emissões absolutas de gases de efeito estufa (GEE) ou gases associados"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AbsoluteEmissionsOfGreenhouseGases-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atende aos valores determinados"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AbsoluteEmissionsOfGreenhouseGases-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não atende"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AccessToInternationalMarket",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#AccessToInternationalMarket-1", "http://semantic.icmc.usp.br/sustenagro#AccessToInternationalMarket-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Acesso ao mercado internacional (função do atendimento a certificações internacionais)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AccessToInternationalMarket-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AccessToInternationalMarket-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AdequacyOfBoilers",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#AdequacyOfBoilers-1", "http://semantic.icmc.usp.br/sustenagro#AdequacyOfBoilers-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adequação das caldeiras"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AdequacyOfBoilers-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Caldeiras menos eficientes (de baixa pressão)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AdequacyOfBoilers-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Caldeiras mais eficientes (novas e com maior pressão)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AdequateDestinationOfVinasse",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adequada destinação da vinhaça"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AdequateStructureForInstallationOrExpansionOfWaterReuse",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Estrutura adequada para instalação ou ampliação do reuso da água (circuito fechado)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AdherenceToAgricultureProgramLowCarbon",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#AdherenceToAgricultureProgramLowCarbon-0", "http://semantic.icmc.usp.br/sustenagro#AdherenceToAgricultureProgramLowCarbon-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adesão ao Programa de Agricultura de Baixo Carbono (pelo menos um dos programas)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AdherenceToAgricultureProgramLowCarbon-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adesão"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AdherenceToAgricultureProgramLowCarbon-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType-1", "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType-0", "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType-3", "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType-2" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Tipo de corte"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Manual em áreas aptas a mecanização"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Manual com queima"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Mecanizado com queima"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType-3",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Mecanizado crua"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalIndicator",
+    "@type" : [ "_:b0", "http://semantic.icmc.usp.br/sustenagro#Indicator", "http://purl.org/biodiv/semanticUI#Feature", "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : "http://semantic.icmc.usp.br/sustenagro#DeforestationAttribute",
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Dimensão agricultural"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement-0", "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement-1", "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement-2", "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement-3" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Manejo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Preparo / plantio / manutenção do canavial manual em áreas aptas a mecanização"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Preparo / plantio / manutenção do canavial manual em função de restrições do tamanho da área e declividade"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Preparo / plantio / manutenção do canavial usando mecanização"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement-3",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Preparo / plantio / manutenção do canavial (automatizados ou empregando sistemas de informação? Por ex sensoriamento remoto ou agricultura de precisão)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalPlanningObservingManagementTechniquesPlantingAndHarvestingSeasons",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Planejamento agrícola observando as técnicas de manejo e épocas de plantio e colheita"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalVarieties",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#AgriculturalVarieties-0", "http://semantic.icmc.usp.br/sustenagro#AgriculturalVarieties-1", "http://semantic.icmc.usp.br/sustenagro#AgriculturalVarieties-2" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Variedades"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalVarieties-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adaptadas"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalVarieties-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Convencional"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AgriculturalVarieties-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adaptadas e resistentes"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AtmosphereAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#EmissionControlnAccordanceWithResolutions", "http://semantic.icmc.usp.br/sustenagro#AbsoluteEmissionsOfGreenhouseGases" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo atmosfera"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AtmosphericPollutantsEmission",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#AtmosphericPollutantsEmission-1", "http://semantic.icmc.usp.br/sustenagro#AtmosphericPollutantsEmission-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emissão de poluentes atmosféricos"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AtmosphericPollutantsEmission-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emprego de sistemas redutores de emissões de gases"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AtmosphericPollutantsEmission-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não emprega nenhuma técnica de redução de gases"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AttendanceOfRequirementsOfAdequateEquipmentUsageNorm31",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atendimento de requisitos de uso de equipamento adequado para aplicação de agrotóxicos de acordo com a Norma Reguladora 31"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AttendanceToLaw7802-1989",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atendimento a Lei n°7.802/1989 que dispõe sobre o transporte, armazenamento, comercialização, destino final dos resíduos e embalagens de agrotóxicos e afins."
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#AttendanceToSprayingRestriction",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atendimento à restrição da pulverização aérea para aplicação de maturadores (Instrução Normativa Conjunta 1/2012//DAS/MAPA)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BagasseAndStrawDestination",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#BagasseAndStrawDestination-0", "http://semantic.icmc.usp.br/sustenagro#BagasseAndStrawDestination-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Destinação mais sustentável do bagaço e palha (Por ex. produção de etanol de 2ª geração, produção de energia, etc)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BagasseAndStrawDestination-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BagasseAndStrawDestination-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BagasseDestination",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#BagasseDestination-0", "http://semantic.icmc.usp.br/sustenagro#BagasseDestination-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Destinação do bagaço"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BagasseDestination-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Descarte inadequado do bagaço"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BagasseDestination-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emprego ou venda do bagaço para produção de energia elétrica"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BalanceComponentsThatInterfereWithSugarcaneProductivity",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#BalanceComponentsThatInterfereWithSugarcaneProductivity-0", "http://semantic.icmc.usp.br/sustenagro#BalanceComponentsThatInterfereWithSugarcaneProductivity-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Balanço de componentes que interferem na produtividade da cana (mapa de solos, planejamento do uso de insumos, etc)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BalanceComponentsThatInterfereWithSugarcaneProductivity-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Favorável"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BalanceComponentsThatInterfereWithSugarcaneProductivity-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Desfavorável"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BiodiversityAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#ProtectionPlanAndConservationOfRemainingAreas-Protected", "http://semantic.icmc.usp.br/sustenagro#NaturalRecoveryAndInducedAreas", "http://semantic.icmc.usp.br/sustenagro#ComplianceWithCurrentEnvironmentalLegislation" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo biodiversidade"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BiofuelInfrastructureAvailable",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#BiofuelInfrastructureAvailable-1", "http://semantic.icmc.usp.br/sustenagro#BiofuelInfrastructureAvailable-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Infraestrutura disponível para produção de biocombustíveis de segunda e terceira geração"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BiofuelInfrastructureAvailable-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BiofuelInfrastructureAvailable-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#BufferStocks",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Ter estoques de combustível de modo a regular oferta/demanda do etanol e preços (estoques reguladores)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceToStateEnvironmentalProtocols",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#ComplianceToStateEnvironmentalProtocols-1", "http://semantic.icmc.usp.br/sustenagro#ComplianceToStateEnvironmentalProtocols-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atendimento a protocolos ambientais estaduais"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceToStateEnvironmentalProtocols-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceToStateEnvironmentalProtocols-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceWithAgriculturalAndEconomicZoning",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#ComplianceWithAgriculturalAndEconomicZoning-0", "http://semantic.icmc.usp.br/sustenagro#ComplianceWithAgriculturalAndEconomicZoning-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atendimento ao zoneamento agrícola e econômico (ZAE)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceWithAgriculturalAndEconomicZoning-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceWithAgriculturalAndEconomicZoning-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceWithCurrentEnvironmentalLegislation",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Cumprimento da Legislação ambiental vigente"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceWithNationalCommitmentToAdequacyToGoodWorkingConditions",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#ComplianceWithNationalCommitmentToAdequacyToGoodWorkingConditions-1", "http://semantic.icmc.usp.br/sustenagro#ComplianceWithNationalCommitmentToAdequacyToGoodWorkingConditions-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atendimento ao compromisso nacional para Aperfeiçoar as Condições de trabalho na Cana-de-açúcar"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceWithNationalCommitmentToAdequacyToGoodWorkingConditions-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceWithNationalCommitmentToAdequacyToGoodWorkingConditions-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ComplianceWithRegulatoryNorm24",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Cumprimento a Norma Regulamentadora 24 que trata do bem-estar do trabalhador"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#CostAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#SugarcaneTransportOptimizationForIndustry", "http://semantic.icmc.usp.br/sustenagro#InvestmentRatioMachinesVersusProductionReturnOnAssets", "http://semantic.icmc.usp.br/sustenagro#BufferStocks" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo de custo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#CropPlanning",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Planejamento de safra"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DeforestationAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : "http://semantic.icmc.usp.br/sustenagro#DeforestationIndicator",
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo desmatamento"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DeforestationIndicator",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Indicador desmatamento"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DevelopmentOfNewTechniquesForReduingWaterConsumption",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#DevelopmentOfNewTechniquesForReduingWaterConsumption-1", "http://semantic.icmc.usp.br/sustenagro#DevelopmentOfNewTechniquesForReduingWaterConsumption-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Desenvolvimento de novas técnicas para redução do consumo de água"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DevelopmentOfNewTechniquesForReduingWaterConsumption-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DevelopmentOfNewTechniquesForReduingWaterConsumption-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DirectAlignment",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Direta"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DirectOptimization",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Direta"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DomesticDemand",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#DomesticDemand-0", "http://semantic.icmc.usp.br/sustenagro#DomesticDemand-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Demanda doméstica aumentou em relação ao ano anterior"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DomesticDemand-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DomesticDemand-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#DontExist",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não Existe"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EconomicIndicator",
+    "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Resource", "_:b0", "http://www.w3.org/2000/01/rdf-schema#Class", "http://www.w3.org/2002/07/owl#Class", "http://semantic.icmc.usp.br/sustenagro#Indicator", "http://purl.org/biodiv/semanticUI#Feature" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#CostAttribute", "http://semantic.icmc.usp.br/sustenagro#IndustrialUnityAttribute", "http://semantic.icmc.usp.br/sustenagro#InvestmentsAttribute", "http://semantic.icmc.usp.br/sustenagro#ProductivityAttribute", "http://semantic.icmc.usp.br/sustenagro#EnergyAttribute", "http://semantic.icmc.usp.br/sustenagro#SubProductsAttribute" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Dimensão econômica"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ElectricityProduction",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#ElectricityProduction-1", "http://semantic.icmc.usp.br/sustenagro#ElectricityProduction-2", "http://semantic.icmc.usp.br/sustenagro#ElectricityProduction-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Produção de energia elétrica"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ElectricityProduction-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Compra energia"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ElectricityProduction-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Produz para consumo próprio"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ElectricityProduction-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Produz para consumo e venda"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ElectricityProductionForOwnConsumptionAndExport",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#ElectricityProductionForOwnConsumptionAndExport-2", "http://semantic.icmc.usp.br/sustenagro#ElectricityProductionForOwnConsumptionAndExport-0", "http://semantic.icmc.usp.br/sustenagro#ElectricityProductionForOwnConsumptionAndExport-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Produção de bioeletricidade para consumo próprio e exportação"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ElectricityProductionForOwnConsumptionAndExport-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não supre a própria demanda ou esta é parcial"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ElectricityProductionForOwnConsumptionAndExport-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Supre totalmente e comercializa o excedente"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ElectricityProductionForOwnConsumptionAndExport-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Supre totalmente a própria demanda"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EmissionControlnAccordanceWithResolutions",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Controle de emissões de acordo com as resoluções CONAMA 382/2006 e 436/2011"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EmploymentFormalization",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#EmploymentFormalization-0", "http://semantic.icmc.usp.br/sustenagro#EmploymentFormalization-1", "http://semantic.icmc.usp.br/sustenagro#EmploymentFormalization-2" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Formalização de emprego"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EmploymentFormalization-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Menor que 79%"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EmploymentFormalization-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Entre 80% e 90%"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EmploymentFormalization-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Maior que 91%"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EmploymentOfAdequateIrrigationToWaterUsePolicy",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emprego de irrigação adequado a política de uso da água"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EnergyAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#PlanToReplacementOfOldBoilersWithMoreEfficientBoilersForCogeneration", "http://semantic.icmc.usp.br/sustenagro#GradualReplacementOfDieselUseByRenewableFuelInTheFleet", "http://semantic.icmc.usp.br/sustenagro#ElectricityProductionForOwnConsumptionAndExport" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo de energia"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#EnvironmentalIndicator",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "_:b0", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://semantic.icmc.usp.br/sustenagro#Indicator", "http://www.w3.org/2000/01/rdf-schema#Class", "http://purl.org/biodiv/semanticUI#Feature" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#SoilsAttribute", "http://semantic.icmc.usp.br/sustenagro#GeneralAttribute", "http://semantic.icmc.usp.br/sustenagro#WaterAttribute", "http://semantic.icmc.usp.br/sustenagro#PlantingAttribute", "http://semantic.icmc.usp.br/sustenagro#HarvestAttribute", "http://semantic.icmc.usp.br/sustenagro#BiodiversityAttribute", "http://semantic.icmc.usp.br/sustenagro#AtmosphereAttribute" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Dimensão ambiental"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#Exist",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Existe"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ExistenceOfTrainingProgramsAndTrainingToWorkers",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#Exist", "http://semantic.icmc.usp.br/sustenagro#DontExist" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Existência de programas de capacitação e treinamento ao trabalhador"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#FermentationEfficiency",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#FermentationEfficiency-1", "http://semantic.icmc.usp.br/sustenagro#FermentationEfficiency-0", "http://semantic.icmc.usp.br/sustenagro#FermentationEfficiency-2" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Eficiência da fermentação"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#FermentationEfficiency-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Abaixo de 88%"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#FermentationEfficiency-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "88% a 90%"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#FermentationEfficiency-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Acima de 90%"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#FiltercakeAndAshesDestination",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#FiltercakeAndAshesDestination-0", "http://semantic.icmc.usp.br/sustenagro#FiltercakeAndAshesDestination-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Destinação de torta de filtro e cinza"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#FiltercakeAndAshesDestination-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Reutilização no campo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#FiltercakeAndAshesDestination-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Descarte Inadequado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#FulfillmentOfLaborLaws",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Cumprimento das leis trabalhistas de acordo com a Lei N°5.889/73* acrescida da Lei N° 11.718/2008* que tratam das relações de trabalho no setor rural."
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#GeneralAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfTechniquesForBiologicalPestControl", "http://semantic.icmc.usp.br/sustenagro#AttendanceToSprayingRestriction", "http://semantic.icmc.usp.br/sustenagro#AdequateDestinationOfVinasse" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributos gerais"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#GovernmentSubsidy",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#GovernmentSubsidy-0", "http://semantic.icmc.usp.br/sustenagro#GovernmentSubsidy-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Incentivo do governo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#GovernmentSubsidy-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Empresa nascente"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#GovernmentSubsidy-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Para o setor"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#GradualReplacementOfDieselUseByRenewableFuelInTheFleet",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Substituição gradativa do uso de diesel por combustível renovável na frota"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#HarvestAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithLowerSlopeOf12", "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithHigherSlopeOf12", "http://semantic.icmc.usp.br/sustenagro#TrafficControl", "http://semantic.icmc.usp.br/sustenagro#HarvestTypeUsed" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo colheita"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#HarvestTypeUsed",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#HarvestTypeUsed-2", "http://semantic.icmc.usp.br/sustenagro#HarvestTypeUsed-1", "http://semantic.icmc.usp.br/sustenagro#HarvestTypeUsed-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Tipo de colheita utilizada (manual ou mecanizada)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#HarvestTypeUsed-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Manual"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#HarvestTypeUsed-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Mecanizado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#HarvestTypeUsed-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Semimecanizado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#HealthAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#ComplianceWithRegulatoryNorm24", "http://semantic.icmc.usp.br/sustenagro#AttendanceOfRequirementsOfAdequateEquipmentUsageNorm31" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo de saúde"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#Indicator",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : "http://semantic.icmc.usp.br/sustenagro#SustainabilityIndicator",
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Indicador"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#IndirectAlignment",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Indireta"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#IndirectOptimization",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Indireta"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#IndustrialUnityAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#UsesOrInvestestInMoreResistantYeast", "http://semantic.icmc.usp.br/sustenagro#BiofuelInfrastructureAvailable" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo unidade industrial"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#InitiativesOrActionsThatPromoteTheLocalCommunityWell-Being",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Iniciativas ou ações que promovam o bem-estar da comunidade local de acordo com as normas de Responsabilidade Social Empresarial (RSE)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#InvestmentRatioMachinesVersusProductionReturnOnAssets",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#InvestmentRatioMachinesVersusProductionReturnOnAssets-0", "http://semantic.icmc.usp.br/sustenagro#InvestmentRatioMachinesVersusProductionReturnOnAssets-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Relação entre investimento de máquinas versus produção de cana e retorno do imobilizado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#InvestmentRatioMachinesVersusProductionReturnOnAssets-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Positivo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#InvestmentRatioMachinesVersusProductionReturnOnAssets-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Negativo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#InvestmentsAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : "http://semantic.icmc.usp.br/sustenagro#InvestmentsInNewTechnologiesAndIndustrialProcessesWhichContributeACleanerAndSustainableProduction",
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo de investimentos"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#InvestmentsInNewTechnologiesAndIndustrialProcessesWhichContributeACleanerAndSustainableProduction",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Investimentos em novas tecnologias e processos industriais que favoreçam uma produção mais limpa e sustentável"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ItOwnOrGrantsForWaterCatchmentAccordingToCurrentRegulations",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Possui outorga para captação de água segundo a norma vigente"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#JobsAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#RemunerationCompatibleWithAgreedMinimumWageBetweenUnionAndPlant", "http://semantic.icmc.usp.br/sustenagro#EmploymentFormalization" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo Empregos"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#LocalIncomeGeneration",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#LocalIncomeGeneration-0", "http://semantic.icmc.usp.br/sustenagro#LocalIncomeGeneration-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Aumento no PIB do município onde está localizada a usina."
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#LocalIncomeGeneration-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#LocalIncomeGeneration-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#Logistic",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#TransportTechnologiesAndOrganization", "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Logística"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#LogisticsPlanningOfTheFieldSucarcaneToThePlant",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Planejamento logístico da cana do campo para a usina"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#MarketVariable",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#PriceQuaranteePolicyAndProductionInTheField", "http://semantic.icmc.usp.br/sustenagro#PositiveGenerationOfFormalEmployment", "http://semantic.icmc.usp.br/sustenagro#LocalIncomeGeneration", "http://semantic.icmc.usp.br/sustenagro#DomesticDemand", "http://semantic.icmc.usp.br/sustenagro#AccessToInternationalMarket" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Variável de mercado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#NaturalRecoveryAndInducedAreas",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Áreas em recuperação natural e induzida (reflorestamento)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#NoValue",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#NullAlignment",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Nula"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#NullOptimization",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Nula"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlanToExpandProductionViaImprovedProductivity",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Plano de expansão da produção via melhoria da produtividade"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlanToReplacementOfOldBoilersWithMoreEfficientBoilersForCogeneration",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Plano de substituição das caldeiras antigas por caldeiras mais eficientes para cogeração de energia"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront-3", "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront-1", "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront-2", "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Monitoramento e organização do transporte e planejamento das frentes de colheita (maquinário)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Inadequado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adequado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlanningOfHarvestFront-3",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Otimizado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlanningTheProductionEnvironmentInAccordanceWithAptitudePedologicalOrEdaphic",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Planejamento do ambiente de produção segundo aptidão pedológica ou edáfica"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantationPlanAccordingToTheRegionalFeatures",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Plano de plantio de acordo com as caracteristícas regionais (ambiente de produção)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantationTypeUsed",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#PlantationTypeUsed-2", "http://semantic.icmc.usp.br/sustenagro#PlantationTypeUsed-0", "http://semantic.icmc.usp.br/sustenagro#PlantationTypeUsed-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Tipo de plantio utilizado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantationTypeUsed-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Mecanizado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantationTypeUsed-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Semimecanizado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantationTypeUsed-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Manual"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantingAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfAdequateVarietyToTheClimateAndSoilConditions", "http://semantic.icmc.usp.br/sustenagro#RenewalOfAreaWithSugarcaneUsingRotationWithFoodCrops", "http://semantic.icmc.usp.br/sustenagro#RationalUseOfInputs", "http://semantic.icmc.usp.br/sustenagro#PlantationTypeUsed", "http://semantic.icmc.usp.br/sustenagro#PlantationPlanAccordingToTheRegionalFeatures" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo Plantio"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-0", "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-1", "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-2", "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-3", "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-4" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Plano de plantio considerando o uso precursor da área"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Em substituição a áreas de matas nativas"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Em substituição a pasto"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 3.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Em substituição a áreas degradadas"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-3",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Em substituição a cana e culturas similares"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea-4",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Em substituição a culturas alimentares"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PoliticalVariable",
+    "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Class", "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#ComplianceWithNationalCommitmentToAdequacyToGoodWorkingConditions", "http://semantic.icmc.usp.br/sustenagro#PublicPoliciesForSector", "http://semantic.icmc.usp.br/sustenagro#AdherenceToAgricultureProgramLowCarbon", "http://semantic.icmc.usp.br/sustenagro#ComplianceToStateEnvironmentalProtocols", "http://semantic.icmc.usp.br/sustenagro#ComplianceWithAgriculturalAndEconomicZoning", "http://semantic.icmc.usp.br/sustenagro#GovernmentSubsidy" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Variáveis políticas (ambientais e sociais)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PositiveGenerationOfFormalEmployment",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#PositiveGenerationOfFormalEmployment-1", "http://semantic.icmc.usp.br/sustenagro#PositiveGenerationOfFormalEmployment-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Geração positiva de emprego formal (em relação ao período anterior)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PositiveGenerationOfFormalEmployment-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PositiveGenerationOfFormalEmployment-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PresenceOfInnovationsInTheField",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#PresenceOfInnovationsInTheField-0", "http://semantic.icmc.usp.br/sustenagro#PresenceOfInnovationsInTheField-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Presença de inovações no campo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PresenceOfInnovationsInTheField-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adesão e uso das Inovações"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PresenceOfInnovationsInTheField-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Dificuldade de adesão e uso das Inovações"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PriceEqualizationPolicy",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#PriceEqualizationPolicy-1", "http://semantic.icmc.usp.br/sustenagro#PriceEqualizationPolicy-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Política de estabilidade preços (tancagem, garantia de preço, warrant)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PriceEqualizationPolicy-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Favorável (com estoques)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PriceEqualizationPolicy-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Desfavorável (sem estoques)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PriceQuaranteePolicyAndProductionInTheField",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#PriceQuaranteePolicyAndProductionInTheField-1", "http://semantic.icmc.usp.br/sustenagro#PriceQuaranteePolicyAndProductionInTheField-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Políticas de garantia de safra e de produção no campo (financiamento da safra agrícola)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PriceQuaranteePolicyAndProductionInTheField-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PriceQuaranteePolicyAndProductionInTheField-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProducersOrPlantsOrganization",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#ProducersOrPlantsOrganization-1", "http://semantic.icmc.usp.br/sustenagro#ProducersOrPlantsOrganization-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Organização de produtores ou usinas"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProducersOrPlantsOrganization-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProducersOrPlantsOrganization-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductionEfficiencyFeature",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#SugarcaneQuality", "http://semantic.icmc.usp.br/sustenagro#Logistic", "http://semantic.icmc.usp.br/sustenagro#ProductionVariable", "http://semantic.icmc.usp.br/sustenagro#PoliticalVariable", "http://semantic.icmc.usp.br/sustenagro#MarketVariable" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Eficiência da produção"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductionEvaluationBasedOnMarketDecision",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Avaliação da produção (etanol/açúcar/bioeletricidade) com base na decisão de mercado e/ou preços"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductionVariable",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfMoreEfficientInputs", "http://semantic.icmc.usp.br/sustenagro#BalanceComponentsThatInterfereWithSugarcaneProductivity" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Variáveis de produção"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductivityAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Class", "http://www.w3.org/2000/01/rdf-schema#Resource" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#ReformAndOrRotationCropForTheNextHarvest", "http://semantic.icmc.usp.br/sustenagro#CropPlanning", "http://semantic.icmc.usp.br/sustenagro#PlanToExpandProductionViaImprovedProductivity", "http://semantic.icmc.usp.br/sustenagro#ProductionEvaluationBasedOnMarketDecision", "http://semantic.icmc.usp.br/sustenagro#TotalRecoverableSugarIndex", "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare", "http://semantic.icmc.usp.br/sustenagro#LogisticsPlanningOfTheFieldSucarcaneToThePlant", "http://semantic.icmc.usp.br/sustenagro#SharingOfRisksBetweenSuppliersAndProductionPlant", "http://semantic.icmc.usp.br/sustenagro#AgriculturalPlanningObservingManagementTechniquesPlantingAndHarvestingSeasons" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo de produtividade"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-0", "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-1", "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-4", "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-2", "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-3" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Produtividade de cana-de-açucar por hectare"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Menor que 64 Ton/ha"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "85 Ton/ha"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Maior que 85 Ton/ha"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-3",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "81-75 Ton/ha"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProductivityOfSugarcanePerHectare-4",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "74-64 Ton/ha"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ProtectionPlanAndConservationOfRemainingAreas-Protected",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Plano de proteção e conservação de áreas remanescentes/protegidas (Áreas de Proteção Permanente, Reserva Legal)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PublicPoliciesForSector",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#PublicPoliciesForSector-1", "http://semantic.icmc.usp.br/sustenagro#PublicPoliciesForSector-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Políticas públicas para o setor"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PublicPoliciesForSector-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Formuladas sem considerar a realidade do campo ou do produtor"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#PublicPoliciesForSector-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Direcionada para inovação com redução de custo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#RationalUseOfInputs",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso racional de insumos"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#RawMaterialDiversificationWithImprovedInputs",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#RawMaterialDiversificationWithImprovedInputs-1", "http://semantic.icmc.usp.br/sustenagro#RawMaterialDiversificationWithImprovedInputs-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Diversificação da matéria prima com insumos melhorados"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#RawMaterialDiversificationWithImprovedInputs-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso de cana energia / biomassa/ sorgo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#RawMaterialDiversificationWithImprovedInputs-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso de cana convencional"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReducingWaterConsumptionInSugarcaneProcessing",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Redução do consumo de água no processamento da cana"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-5", "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-0", "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-1", "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-2", "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-3", "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-4" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Consumo de água"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -3.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "maior do que 4 m3/ton"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "2.0 até 4.0 m3/ton"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "de 1.0 a 2.0 m3/ton"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-3",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "0.7 m3/ton até 1.0 m3/ton"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-4",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "0.7 m3/ton"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption-5",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 3.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "menor do que 0.7 m3/ton"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReformAndOrRotationCropForTheNextHarvest",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Reforma e/ou rotação de cultura para a próxima safra"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#RegulatoryAttendanceAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#InitiativesOrActionsThatPromoteTheLocalCommunityWell-Being", "http://semantic.icmc.usp.br/sustenagro#FulfillmentOfLaborLaws" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo atendimento normativo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#RemunerationCompatibleWithAgreedMinimumWageBetweenUnionAndPlant",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Remuneração compatível com piso salarial acordado entre sindicato e usina"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#RenewalOfAreaWithSugarcaneUsingRotationWithFoodCrops",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Renovação da área com cana utilizando rotação com culturas alimentares"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#ReuseOfStrawComingFromTheHarvestForGroundCover",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Reutilização da palhada ou palhiço oriundo da colheita para cobertura do solo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SafetyAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : "http://semantic.icmc.usp.br/sustenagro#TrainingRoutineInWorkerSafety",
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo segurança"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SharingOfRisksBetweenSuppliersAndProductionPlant",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Compartilhamento dos riscos de produção entre fornecedores e usina"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SocialIndicator",
+    "@type" : [ "_:b0", "http://purl.org/biodiv/semanticUI#Feature", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Class", "http://semantic.icmc.usp.br/sustenagro#Indicator" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#JobsAttribute", "http://semantic.icmc.usp.br/sustenagro#SafetyAttribute", "http://semantic.icmc.usp.br/sustenagro#TrainingAttribute", "http://semantic.icmc.usp.br/sustenagro#HealthAttribute", "http://semantic.icmc.usp.br/sustenagro#RegulatoryAttendanceAttribute" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Dimensão social"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SoilsAttribute",
+    "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#PlantingPlanConsideringThePrecursorUseOfArea", "http://semantic.icmc.usp.br/sustenagro#UseOfAdequateTerracingToTheSoilSlopeAndHarvestMechanization", "http://semantic.icmc.usp.br/sustenagro#AttendanceToLaw7802-1989", "http://semantic.icmc.usp.br/sustenagro#UseOfTechniquesOfGreenManure", "http://semantic.icmc.usp.br/sustenagro#PlanningTheProductionEnvironmentInAccordanceWithAptitudePedologicalOrEdaphic", "http://semantic.icmc.usp.br/sustenagro#UseOfCakeFIlterInTheOrganicManureInAreaWithSugarcane", "http://semantic.icmc.usp.br/sustenagro#ReuseOfStrawComingFromTheHarvestForGroundCover" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo solos"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SubProductsAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfVinasseToFertigation", "http://semantic.icmc.usp.br/sustenagro#UseOfFilterCakeWhichPartiallyReplacedMineralFertilizer" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo subprodutos"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneMechanization",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#SugarcaneMechanization-0", "http://semantic.icmc.usp.br/sustenagro#SugarcaneMechanization-1", "http://semantic.icmc.usp.br/sustenagro#SugarcaneMechanization-2" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Mecanização da cana"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneMechanization-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Inadequada – aumento de custos de produção"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneMechanization-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Adequada – com redução de perdas visíveis e invisíveis"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneMechanization-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Com eficiência para o ambiente de produção – emprego de técnicas para reduzir a compactação do solo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcanePlanting",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#SugarcanePlanting-2", "http://semantic.icmc.usp.br/sustenagro#SugarcanePlanting-1", "http://semantic.icmc.usp.br/sustenagro#SugarcanePlanting-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Plantio de cana"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcanePlanting-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Muda não controlada"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcanePlanting-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Com muda sadia"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcanePlanting-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Muda Pré-brotada (MPB)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneQuality",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneValueInATR",
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Qualidade da cana-de-açucar"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneTransportOptimizationForIndustry",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Otimização do transporte da cana de açucar para a indústria"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneValueInATR",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#SugarcaneValueInATR-0", "http://semantic.icmc.usp.br/sustenagro#SugarcaneValueInATR-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Valor da cana em ATR/hectare (considera a produtividade e qualidade da cana)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneValueInATR-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Menor"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SugarcaneValueInATR-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Igual ou superior"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#SustainabilityIndicator",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#SocialIndicator", "http://semantic.icmc.usp.br/sustenagro#EconomicIndicator", "http://semantic.icmc.usp.br/sustenagro#EnvironmentalIndicator", "http://semantic.icmc.usp.br/sustenagro#AgriculturalIndicator" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Indicador de sustentabilidade"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TechnologicalEfficiencyFeature",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#TechnologicalEfficiencyInTheField", "http://semantic.icmc.usp.br/sustenagro#TechnologicalEfficiencyInTheIndustrial" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Eficiência tecnológica"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TechnologicalEfficiencyInTheField",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "hasWeight" : [ "http://semantic.icmc.usp.br/sustenagro#NullAlignment", "http://semantic.icmc.usp.br/sustenagro#IndirectAlignment", "http://semantic.icmc.usp.br/sustenagro#DirectAlignment" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#SugarcanePlanting", "http://semantic.icmc.usp.br/sustenagro#VinasseUse", "http://semantic.icmc.usp.br/sustenagro#AgriculturalManagement", "http://semantic.icmc.usp.br/sustenagro#AgriculturalVarieties", "http://semantic.icmc.usp.br/sustenagro#ProducersOrPlantsOrganization", "http://semantic.icmc.usp.br/sustenagro#PresenceOfInnovationsInTheField", "http://semantic.icmc.usp.br/sustenagro#SugarcaneMechanization", "http://semantic.icmc.usp.br/sustenagro#AgriculturalCuttingType", "http://semantic.icmc.usp.br/sustenagro#PriceEqualizationPolicy" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Eficiência tecnológica no campo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TechnologicalEfficiencyInTheIndustrial",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "hasWeight" : [ "http://semantic.icmc.usp.br/sustenagro#IndirectOptimization", "http://semantic.icmc.usp.br/sustenagro#DirectOptimization", "http://semantic.icmc.usp.br/sustenagro#NullOptimization" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#VinasseConcentration", "http://semantic.icmc.usp.br/sustenagro#FermentationEfficiency", "http://semantic.icmc.usp.br/sustenagro#DevelopmentOfNewTechniquesForReduingWaterConsumption", "http://semantic.icmc.usp.br/sustenagro#BagasseDestination", "http://semantic.icmc.usp.br/sustenagro#VinasseTransport", "http://semantic.icmc.usp.br/sustenagro#BagasseAndStrawDestination", "http://semantic.icmc.usp.br/sustenagro#AdequacyOfBoilers", "http://semantic.icmc.usp.br/sustenagro#WaterProduction", "http://semantic.icmc.usp.br/sustenagro#UseOfMoreResistantStrainsToTheEthanolConcentration", "http://semantic.icmc.usp.br/sustenagro#AtmosphericPollutantsEmission", "http://semantic.icmc.usp.br/sustenagro#FiltercakeAndAshesDestination", "http://semantic.icmc.usp.br/sustenagro#ReductionInWaterConsumption", "http://semantic.icmc.usp.br/sustenagro#RawMaterialDiversificationWithImprovedInputs", "http://semantic.icmc.usp.br/sustenagro#ElectricityProduction" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Eficiência tecnológica na industria"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TotalRecoverableSugarIndex",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#TotalRecoverableSugarIndex-1", "http://semantic.icmc.usp.br/sustenagro#TotalRecoverableSugarIndex-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Índice de ATR (açúcares totais recuperáveis) por tonelada de cana-de-açucar"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TotalRecoverableSugarIndex-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "140 a 145 kg"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TotalRecoverableSugarIndex-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "130 a 139 kg"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TrafficControl",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Controle de tráfego"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TrainingAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : "http://semantic.icmc.usp.br/sustenagro#ExistenceOfTrainingProgramsAndTrainingToWorkers",
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo Capacitação"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TrainingRoutineInWorkerSafety",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#Exist", "http://semantic.icmc.usp.br/sustenagro#DontExist" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Rotina de treinamento em segurança do trabalhador"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TransportTechnologiesAndOrganization",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#TransportTechnologiesAndOrganization-0", "http://semantic.icmc.usp.br/sustenagro#TransportTechnologiesAndOrganization-1", "http://semantic.icmc.usp.br/sustenagro#TransportTechnologiesAndOrganization-2" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Tecnologias de transporte da cana e organização das frentes de corte"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TransportTechnologiesAndOrganization-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Romeu e Julieta"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TransportTechnologiesAndOrganization-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Treminhão"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#TransportTechnologiesAndOrganization-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Rodotrem"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfAdequateTerracingToTheSoilSlopeAndHarvestMechanization",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso de terraceamento adequado a declividade do solo e mecanização da colheita"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfAdequateVarietyToTheClimateAndSoilConditions",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emprego de variedade adequada às condições de clima e solo"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithHigherSlopeOf12",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithHigherSlopeOf12-1", "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithHigherSlopeOf12-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso de queima em áreas com declive acima de 12%"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithHigherSlopeOf12-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithHigherSlopeOf12-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithLowerSlopeOf12",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithLowerSlopeOf12-0", "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithLowerSlopeOf12-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso de queima em áreas com declive inferior a 12%"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithLowerSlopeOf12-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfBurningInAreasWithLowerSlopeOf12-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfCakeFIlterInTheOrganicManureInAreaWithSugarcane",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso de torta de filtro na adubação orgânica em área com cana (plantio, soca, reforma)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfFilterCakeWhichPartiallyReplacedMineralFertilizer",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso de torta de filtro em substituição parcial a adubação mineral"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfMoreEfficientInputs",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfMoreEfficientInputs-0", "http://semantic.icmc.usp.br/sustenagro#UseOfMoreEfficientInputs-1", "http://semantic.icmc.usp.br/sustenagro#UseOfMoreEfficientInputs-2" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso de insumos mais eficientes"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfMoreEfficientInputs-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Usa agricultura de precisão"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfMoreEfficientInputs-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Segue manual de boas práticas agrícolas"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfMoreEfficientInputs-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não usa"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfMoreResistantStrainsToTheEthanolConcentration",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfMoreResistantStrainsToTheEthanolConcentration-0", "http://semantic.icmc.usp.br/sustenagro#UseOfMoreResistantStrainsToTheEthanolConcentration-2", "http://semantic.icmc.usp.br/sustenagro#UseOfMoreResistantStrainsToTheEthanolConcentration-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Utilização de cepas mais resistentes a concentração do etanol"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfMoreResistantStrainsToTheEthanolConcentration-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Grau alcoólico abaixo de 7GL"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfMoreResistantStrainsToTheEthanolConcentration-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "7 a 9GL"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfMoreResistantStrainsToTheEthanolConcentration-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Acima de 9 GL"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfTechniquesForBiologicalPestControl",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfTechniquesForBiologicalPestControl-1", "http://semantic.icmc.usp.br/sustenagro#UseOfTechniquesForBiologicalPestControl-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emprego de técnicas para controle biológico de pragas"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfTechniquesForBiologicalPestControl-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Usa"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfTechniquesForBiologicalPestControl-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não usa"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfTechniquesOfGreenManure",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emprego de técnicas de adubação verde"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfVinasseToFertigation",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#UseOfVinasseToFertigation-0", "http://semantic.icmc.usp.br/sustenagro#UseOfVinasseToFertigation-1", "http://semantic.icmc.usp.br/sustenagro#UseOfVinasseToFertigation-2" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso da vinhaça para fertirrigação (em substituição parcial a adubação mineral)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfVinasseToFertigation-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso parcial"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfVinasseToFertigation-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não usa"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UseOfVinasseToFertigation-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso total"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#UsesOrInvestestInMoreResistantYeast",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#YesValue", "http://semantic.icmc.usp.br/sustenagro#NoValue" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Utiliza ou investe em leveduras mais resistentes para melhor eficiência na produção de etanol"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#Variable",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#TechnologicalEfficiencyFeature", "http://semantic.icmc.usp.br/sustenagro#ProductionEfficiencyFeature" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Variável"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseConcentration",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#VinasseConcentration-0", "http://semantic.icmc.usp.br/sustenagro#VinasseConcentration-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Concentração da vinhaça"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseConcentration-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Por evaporação empregando vapor vegetal ou membrana"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseConcentration-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Não concentrar a vinhaça"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseTransport",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#VinasseTransport-2", "http://semantic.icmc.usp.br/sustenagro#VinasseTransport-1", "http://semantic.icmc.usp.br/sustenagro#VinasseTransport-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Transporte da vinhaça"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseTransport-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sem revestimento"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseTransport-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Transporte da vinhaça com tubulação ou canais e tanques com revestimento"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseTransport-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 2.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Para fertirrigação ou de biodigestão para produção de energia elétrica"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseUse",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#VinasseUse-0", "http://semantic.icmc.usp.br/sustenagro#VinasseUse-2", "http://semantic.icmc.usp.br/sustenagro#VinasseUse-1" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Uso da vinhaça"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseUse-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Descarte inadequado"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseUse-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 0.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Descarte adequado (canais e tanques revestidos)"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#VinasseUse-2",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Emprego para fertirrigação / Biogás"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#WaterAttribute",
+    "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://www.w3.org/2000/01/rdf-schema#Class" ],
+    "subClass" : [ "http://semantic.icmc.usp.br/sustenagro#ReducingWaterConsumptionInSugarcaneProcessing", "http://semantic.icmc.usp.br/sustenagro#ItOwnOrGrantsForWaterCatchmentAccordingToCurrentRegulations", "http://semantic.icmc.usp.br/sustenagro#EmploymentOfAdequateIrrigationToWaterUsePolicy", "http://semantic.icmc.usp.br/sustenagro#AdequateStructureForInstallationOrExpansionOfWaterReuse" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Atributo água"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#WaterProduction",
+    "value" : [ "http://semantic.icmc.usp.br/sustenagro#WaterProduction-1", "http://semantic.icmc.usp.br/sustenagro#WaterProduction-0" ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Produção de água"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#WaterProduction-0",
+    "http://purl.org/biodiv/semanticUI#asNumber" : -1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "não"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#WaterProduction-1",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "sim"
+    }
+  }, {
+    "@id" : "http://semantic.icmc.usp.br/sustenagro#YesValue",
+    "http://purl.org/biodiv/semanticUI#asNumber" : 1.0,
+    "http://www.w3.org/2000/01/rdf-schema#label" : {
+      "@language" : "pt",
+      "@value" : "Sim"
+    }
+  } ],
+  "@context" : {
+    "subClass" : {
+      "@id" : "http://temp/subClass",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "asNumber" : {
+      "@id" : "http://purl.org/biodiv/semanticUI#asNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "value" : {
+      "@id" : "http://purl.org/biodiv/semanticUI#value",
+      "@type" : "@id"
+    },
+    "hasWeight" : {
+      "@id" : "http://purl.org/biodiv/semanticUI#hasWeight",
+      "@type" : "@id"
+    }
+  }
+}

@@ -1,37 +1,92 @@
-#![feature(wasm_custom_section, wasm_import_module)]
 #![feature(use_extern_macros)]
+#![recursion_limit="512"]
+#![allow(unused)]
+#![allow(non_snake_case)]
 
-extern crate wasm_bindgen;
+use std::collections::HashMap;
+
+#[macro_use]
+extern crate stdweb;
 
 #[macro_use]
 extern crate serde_derive;
 
-extern crate serde;
+use stdweb::Value;
+use stdweb::unstable::TryFrom;
+use stdweb::js_export;
+
+//rust
 extern crate serde_json;
+use serde_json::Error;
+use serde_json::value::Value as Val;
 
-use wasm_bindgen::prelude::*;
+//extern crate rpds;
+//use rpds::Vector;
+//use rpds::HashTrieMap;
 
-#[wasm_bindgen]
-extern {
-    fn alert(s: &str);
+#[macro_use]
+mod react;
+use react::render;
+
+macro_rules! dprint {
+    ($ptr:expr) => {console!(log, Value::try_from($ptr.clone()).unwrap());};
 }
 
-#[wasm_bindgen]
-pub fn greet(name: &str) -> String {
-    let mut a = name.to_string();
-    a.push_str(name);
-    alert(&format!("Hello, {}!", name));
-    return a
+struct ApplicationState {
+    drawer: bool,
+    tab: i32
 }
 
-#[wasm_bindgen]
-pub fn circle_colour() -> String {
-    return "#448afe".to_string();
+impl ApplicationState {
+
+    fn toggleDrawer(&mut self) {
+        self.drawer = !self.drawer;
+        render("app", html!{Base {}})
+    }
+
+    fn tabChange(&mut self, value: i32) {
+        self.tab = value;
+        render("app", html!{Base {}})
+    }
+
+    fn log(&self) {
+        console!(log, "Application State\nDrawer:", self.drawer)
+    }
 }
 
-#[wasm_bindgen]
-pub fn link_colour() -> String {
-    return "#6c9d60".to_string();
+static mut APP_STATE: ApplicationState = ApplicationState { drawer: false, tab: 0 };
+
+#[js_export]
+fn hash( string: String ) -> String {
+    string.to_ascii_uppercase()
+}
+
+fn map<B, F>(col:&Val, mut f: F) -> Vec<B> where F: FnMut(&Val) -> B {
+    match col {
+        Val::Array(vec) => vec.iter().map(f).collect::<Vec<_>>(),
+        _ => vec!(f(col))
+        //{let mut a:Vec<&Val> = Vec::new(); a.push(col); a.iter().map(f).collect::<Vec<_>>()}
+    }
+}
+
+fn GraphNodesPage(props:HashMap<String, Value>) -> Value{
+    html!{
+        div{
+            section(id="svgArea" className="svg-area") {
+                div(id="svgContainer" className="svg-container") {
+                    svg(id="d3svg" className="draw-area") {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+fn get_node(node:&str){
+    react!{GraphNodesPage};
+    render("app1", html!{GraphNodesPage{}});
+    js!(d3interface.render(););
 }
 
 #[derive(Serialize, Deserialize)]
@@ -47,8 +102,8 @@ struct LinkData {
     text: String
 }
 
-#[wasm_bindgen]
-pub fn node_data() -> String {
+#[js_export]
+fn node_data() -> String {
 
     let array = [
         NodeData { name: "Componente".to_string(), sex: "F".to_string() },
@@ -85,8 +140,8 @@ pub fn node_data() -> String {
     return serde_json::to_string(&array).unwrap();
 }
 
-#[wasm_bindgen]
-pub fn link_data() -> String {
+#[js_export]
+fn link_data() -> String {
 
     let array = [
         LinkData { source: "Sistema de Busca".to_string(), target: "Componente".to_string(), text: "É um".to_string()  },
@@ -122,3 +177,126 @@ pub fn link_data() -> String {
     ];
     return serde_json::to_string(&array).unwrap();
 }
+
+#[js_export]
+pub fn circle_colour() -> String {
+    return "#448afe".to_string();
+}
+
+#[js_export]
+pub fn link_colour() -> String {
+    return "#6c9d60".to_string();
+}
+//=============================================================================================
+
+///"Component that shows information that contains an image.
+//  The `title-key`, `content-key` and `image-alt` are keys present in `eul.i18n` dictionary and are used to translate
+//  strings while `image-src` is a string that represents the path for the image."
+fn StandardMediaCard(props:Value) -> Value {
+    let props = serde_json::to_value(props).unwrap();
+    html!(
+        Card{
+            CardMedia(image = props["image"].as_str()
+                      title = "str(props[alt].as_str().unwrap())"){}
+            CardContent{
+                Typography(gutterBottom=true variant="headline" component="h2"){{props["title"].as_str()}}
+                Typography(component="p") {{props["content"].as_str()}}
+            }
+        }
+    )
+}
+
+/////////////////////////////////////////////////////////////////////////
+//"Sustenagro elements that belongs to the homepage."
+fn Homepage(props:Value) -> Value {
+    html!(
+        div{
+            div(className="row"){
+                span(className="col-lg"){
+                    StandardMediaCard (title="SustenAgro"
+                                       content="Blah "
+                                       image="/img/sustainability.png"
+                                       alt="image sustainability alt"
+                                       className = "jj"){}
+                }
+            }
+        }
+    )
+}
+
+///SustenAgro app bar component.
+fn AppNavigation(props:Value) -> Value {
+    let valor = 1;
+    html!{
+        AppBar(title="SustenAgro") {
+            Toolbar {
+                IconButton(aria_label="Menu" color="inherit" onClick=move |_:Value|{unsafe{APP_STATE.toggleDrawer()};}) {
+                    Icon{"menu"}
+                }
+             Tabs(value=unsafe{APP_STATE.tab}  onChange=move |_:Value, value:i32|{unsafe{APP_STATE.tabChange(value)}} scrollable=true scrollButtons="auto") {
+                Tab(label="Graph Editor") {}
+                Tab(label="Individuals") {}
+                Tab(label="Text Editor") {}
+                Tab(label="Class Hierarchy") {}
+                Tab(label="Object Property Hierarchy") {}
+                Tab(label="Data Property Hierarchy") {}
+                Tab(label="Settings") {}
+             }
+
+                Drawer(open=unsafe{APP_STATE.drawer} anchor="left") {
+                    List(component="nav") {
+                        ListItem(button=true onClick=move |_:Value|{unsafe{APP_STATE.toggleDrawer()}}){
+                            ListItemIcon {
+                                Icon{"home"}
+                            }
+                            ListItemText(primary="Home"){}
+                        }
+                        ListItem (button=true onClick=move |_:Value|{unsafe{APP_STATE.toggleDrawer()}; let node = String::from("none"); get_node(&node);}) {
+                            ListItemIcon {
+                                Icon{"assignment"}
+                            }
+                            ListItemText(primary="Assessment"){}
+                        }
+                        ListItem (button=true onClick=move |_:Value|{unsafe{APP_STATE.toggleDrawer()};}) {
+                            ListItemIcon {
+                                Icon{"contact_support"}
+                            }
+                            ListItemText(primary="Contact"){}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+///
+/// "SustenAgro base structure.
+//  This is the app start page."
+///
+fn Base(props:Value) -> Value {
+    html! {
+        //{:mui-theme theme-defaults}
+        MuiThemeProvider (theme = js!(return theme;)){
+            div(id="mainDiv"){
+                div(id="appbar"){
+                    AppNavigation{}
+                }
+                div(id="content"){
+                    Homepage{}
+                }
+            }
+        }
+    }
+}
+
+fn main() -> Result<(), Error>{
+    stdweb::initialize();
+
+    react!{Base, Homepage, AppNavigation}
+    render("app", html!{Base {}});
+
+    stdweb::event_loop();
+    Ok(())
+}
+

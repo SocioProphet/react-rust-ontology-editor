@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+.app-content {
+    margin-top: 64px;
+}
+
 .logo{
   height: 64px;
 }
@@ -29,7 +33,7 @@ button.config-button {
   width: 100%;
 }
 
-.drawArea {
+.draw-area {
   height: 100%;
   width: 100%;
 }
