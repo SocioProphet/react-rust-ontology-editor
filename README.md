@@ -24,18 +24,18 @@ Instalar (usuários Windows) => rustup-init.exe (https://win.rustup.rs/)
 
 <h6>1.5 Procedimentos de Instalação</h6>
 
-Passo 1 (ação): abrir o terminal de comando e navegar até a raiz do projeto (onde está localizado o arquivo Cargo.toml)
-Passo 2 (execute o comando): rustup update nightly
-Passo 3 (execute o comando): rustup target add wasm32-unknown-unknown --toolchain=nightly
-Passo 4 (execute o comando): cargo +nightly install wasm-bindgen-cli
-Passo 5 (execute o comando): cargo +nightly build --target wasm32-unknown-unknown
-Passo 6 (execute o comando): wasm-bindgen target/wasm32-unknown-unknown/debug/react_rust_ontology_editor.wasm --out-dir build
-Passo 7 (execute o comando): npm run build-wasm && npm run build-bindgen && npx webpack
-Passo 8 (execute o comando): npm install
+- Passo 1 (ação): abrir o terminal de comando e navegar até a raiz do projeto (onde está localizado o arquivo Cargo.toml)
+- Passo 2 (execute o comando): rustup update nightly
+- Passo 3 (execute o comando): rustup target add wasm32-unknown-unknown --toolchain=nightly
+- Passo 4 (execute o comando): cargo +nightly install wasm-bindgen-cli
+- Passo 5 (execute o comando): cargo +nightly build --target wasm32-unknown-unknown
+- Passo 6 (execute o comando): wasm-bindgen target/wasm32-unknown-unknown/debug/react_rust_ontology_editor.wasm --out-dir build
+- Passo 7 (execute o comando): npm run build-wasm && npm run build-bindgen && npx webpack
+- Passo 8 (execute o comando): npm install
 
 ## Execução do projeto
 
-<h5><b>2. Ferramentas necessárias</b></h5>
+<h5><b>2. Procedimentos de execução</b></h5>
 
 Para execução do projeto abra dois terminais de comando distintos.
 No primeiro terminal execute o comando: **npm run serve**
