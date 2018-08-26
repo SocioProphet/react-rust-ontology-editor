@@ -1,36 +1,39 @@
-var d3interface = {};
+let d3interface = {};
 
     d3interface.render = function (json) {
     Rust.decisioner.then( function( wasm ) {
-      var svg = d3.select("#d3svg"),
+      let svg = d3.select("#d3svg"),
       width = document.getElementById("d3svg").clientWidth,
       height = document.getElementById("d3svg").clientHeight;
 
-      var radius = 40;
+      let radius = 40;
+	  let nodeType = "circle";
+	  //let nodeType = "rect";
+	  //let nodeType = "custom";
 
-      var nodes_data = JSON.parse(wasm.node_data());
+      let nodes_data = JSON.parse(wasm.node_data());
 
-      var links_data = JSON.parse(wasm.link_data());
+      let links_data = JSON.parse(wasm.link_data());
 
-      var simulation = d3.forceSimulation()
+      let simulation = d3.forceSimulation()
                           .nodes(nodes_data);
 
-      var link_force =  d3.forceLink(links_data)
+      let link_force =  d3.forceLink(links_data)
                               .id(function(d) { return d.name; })
                               .distance(function (d) {
                     return 10;
                               })
                               .strength(0.1);
 
-      var charge_force = d3.forceManyBody()
+      let charge_force = d3.forceManyBody()
           .strength(-100);
 
-      var center_force = d3.forceCenter(width / 2, height / 2);
+      let center_force = d3.forceCenter(width / 2, height / 2);
 
       //custom force to put stuff in a box
       function box_force(alpha) {
-        for (var i = 0, n = nodes_data.length; i < n; ++i) {
-          var curr_node = nodes_data[i];
+        for (let i = 0, n = nodes_data.length; i < n; ++i) {
+          let curr_node = nodes_data[i];
           curr_node.x = Math.max(radius, Math.min(width - radius, curr_node.x));
           curr_node.y = Math.max(radius, Math.min(height - radius, curr_node.y));
         }
@@ -47,7 +50,7 @@ var d3interface = {};
       simulation.on("tick", tickActions );
 
       //draw lines for the links
-      var link = svg.append("g")
+      let link = svg.append("g")
             .attr("class", "links")
           .selectAll("line")
           .data(links_data)
@@ -56,7 +59,7 @@ var d3interface = {};
             .attr("marker-end", "url(#end)")
             .style("stroke", function() {return wasm.link_colour()});
 
-      var linkText = svg.append("g")
+      let linkText = svg.append("g")
           .attr("class", "link-label")
           .selectAll("links")
           .data(links_data)
@@ -64,7 +67,8 @@ var d3interface = {};
           .append("text")
       .attr("class", "link-label")
       .attr("font-family", "Arial, Helvetica, sans-serif")
-      .attr("fill", "Black")
+      //.attr("fill", "Black")
+      .attr("fill", "white")
       .style("font", "normal 12px Arial")
       .attr("dy", ".35em")
       .attr("text-anchor", "middle")
@@ -73,18 +77,39 @@ var d3interface = {};
       });
 
       //draw circles for the nodes
-      var node = svg.append("g")
+      let node;
+        if (nodeType == "circle") {
+        node = svg.append("g")
+                .attr("class", "nodes")
+                .selectAll("circle")
+                .data(nodes_data)
+                .enter()
+                .append("circle")
+                .attr("r", radius)
+                .attr("stroke", "#adadad")
+                .attr("stroke-width", "2px")
+                .attr("fill", function() {return wasm.circle_colour()});
+        } else if (nodeType == "rect") {
+        node = svg.append("g")
               .attr("class", "nodes")
-              .selectAll("circle")
+              .selectAll("rect")
               .data(nodes_data)
-              .enter()
-              .append("circle")
-              .attr("r", radius)
-              .attr("stroke", "#adadad")
-              .attr("stroke-width", "2px")
-              .attr("fill", function() {return wasm.circle_colour()});
+              .enter().append("rect")
+                .attr("width", 40)
+                .attr("height", 40)
+                .attr("fill", "white");
+        } else {
+        node = svg.append("g")
+              .attr("class", "nodes")
+              .selectAll("rect")
+              .data(nodes_data)
+                .enter().append("path").attr("d",function(d) {return d.shape;})
+                .style("stroke","black")
+                .style("stroke-width",3)
+                .style("fill","grey");
+        }
 
-      var text = svg.append("g")
+      let text = svg.append("g")
             .attr("class", "labels")
             .selectAll("text")
             .data(nodes_data)
@@ -107,10 +132,11 @@ var d3interface = {};
           .attr("markerWidth", 4)
           .attr("markerHeight", 6)
           .attr("orient", "auto")
+          .attr("fill", "white")
         .append("svg:path")
           .attr("d", "M0,-5L10,0L0,5");
 
-      var drag_handler = d3.drag()
+      let drag_handler = d3.drag()
           .on("start", drag_start)
           .on("drag", drag_drag)
           .on("end", drag_end);
@@ -142,9 +168,20 @@ var d3interface = {};
 
       function tickActions() {
           //update circle positions each tick of the simulation
-             node
-              .attr("cx", function(d) { return d.x; })
-              .attr("cy", function(d) { return d.y; });
+            if (nodeType == "circle") {
+               node
+                .attr("cx", function(d) { return d.x; })
+                .attr("cy", function(d) { return d.y; });
+            } else if (nodeType == "rect") {
+               node
+                .attr("x", function(d) { return d.x; })
+                .attr("y", function(d) { return d.y; });
+            } else {
+               node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+                  //.attr("d", d3.svg.symbol()
+                    //.size(function(d) { return d.size; })
+                    //.type(function(d) { return d.type; }))
+            }
 
           //update link positions
           link
@@ -169,7 +206,8 @@ var d3interface = {};
 
       //create zoom handler
       //zoom actions is a function that performs the zooming.
-      var zoom_handler = d3.zoom()
+      let zoom_handler = d3.zoom()
+      .scaleExtent([0.1, 5])
           .on("zoom", zoom_actions);
 
         //specify what to do when zoom event listener is triggered
@@ -179,5 +217,11 @@ var d3interface = {};
         linkText.attr("transform", d3.event.transform);
         text.attr("transform", d3.event.transform);
       }
+
+      //add zoom behaviour to the svg element
+      //same as svg.call(zoom_handler);
+      zoom_handler(svg);
+
+      //zoom end
       });
       }

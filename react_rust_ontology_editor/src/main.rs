@@ -27,6 +27,7 @@ use serde_json::value::Value as Val;
 #[macro_use]
 mod react;
 use react::render;
+use react::componentDidMount;
 
 macro_rules! dprint {
     ($ptr:expr) => {console!(log, Value::try_from($ptr.clone()).unwrap());};
@@ -44,9 +45,32 @@ impl ApplicationState {
         render("app", html!{Base {}})
     }
 
-    fn tabChange(&mut self, value: i32) {
-        self.tab = value;
-        render("app", html!{Base {}})
+    fn tabChange(&mut self, tab: i32) {
+        self.tab = tab;
+        render("app", html!{Base {}});
+        if tab == 0 {
+            react! {GraphNodesPage};
+            render("app1", html! {GraphNodesPage{}});
+            js!(d3interface.render(););
+        } else if tab == 1 {
+            react!{IndividualsPage};
+            render("app1", html!{IndividualsPage{}});
+        } else if tab == 2 {
+            react!{TextEditorPage};
+            render("app1", html!{TextEditorPage{}});
+        } else if tab == 3 {
+            react!{ClassHierarchyPage};
+            render("app1", html!{ClassHierarchyPage{}});
+        } else if tab == 4 {
+            react!{ObjPropHierarchyPage};
+            render("app1", html!{ObjPropHierarchyPage{}});
+        } else if tab == 5 {
+            react!{DataPropHierarchyPage};
+            render("app1", html!{DataPropHierarchyPage{}});
+        } else if tab == 6 {
+            react!{SettingsPage};
+            render("app1", html!{SettingsPage{}});
+        }
     }
 
     fn log(&self) {
@@ -71,24 +95,83 @@ fn map<B, F>(col:&Val, mut f: F) -> Vec<B> where F: FnMut(&Val) -> B {
 
 fn GraphNodesPage(props:HashMap<String, Value>) -> Value{
     html!{
-        div{
+        div(className="div-container") {
+            div(className="left-side-bar") {
+                IconButton(color="inherit") {
+                    Icon{"search"}
+                }
+                IconButton(color="inherit") {
+                    Icon{"undo"}
+                }
+                IconButton(color="inherit") {
+                    Icon{"redo"}
+                }
+                IconButton(color="inherit") {
+                    Icon{"zoom_in"}
+                }
+                IconButton(color="inherit") {
+                    Icon{"zoom_out"}
+                }
+                IconButton(color="inherit" className="config-button") {
+                    Icon{"settings"}
+                }
+            }
             section(id="svgArea" className="svg-area") {
                 div(id="svgContainer" className="svg-container") {
-                    svg(id="d3svg" className="draw-area") {
-
-                    }
+                    svg(id="d3svg" className="draw-area") {}
                 }
             }
         }
     }
 }
 
-fn get_node(node:&str){
-    react!{GraphNodesPage};
-    render("app1", html!{GraphNodesPage{}});
-    js!(d3interface.render(););
+fn IndividualsPage(props:HashMap<String, Value>) -> Value{
+    html!{
+        div{
+            span{"IndividualsPage"}
+        }
+    }
 }
 
+fn TextEditorPage(props:HashMap<String, Value>) -> Value{
+    html!{
+        div{
+            span{"TextEditorPage"}
+        }
+    }
+}
+
+fn ClassHierarchyPage(props:HashMap<String, Value>) -> Value{
+    html!{
+        div{
+            span{"ClassHierarchyPage"}
+        }
+    }
+}
+
+fn ObjPropHierarchyPage(props:HashMap<String, Value>) -> Value{
+    html!{
+        div{
+            span{"ObjPropHierarchyPage"}
+        }
+    }
+}
+
+fn DataPropHierarchyPage(props:HashMap<String, Value>) -> Value{
+    html!{
+        div{
+            span{"DataPropHierarchyPage"}
+        }
+    }
+}
+
+fn SettingsPage(props:HashMap<String, Value>) -> Value{
+    html!{
+        div{
+            span{"SettingsPage"}
+        }
+    }
+}
 #[derive(Serialize, Deserialize)]
 struct NodeData {
     name: String,
@@ -233,6 +316,8 @@ fn AppNavigation(props:Value) -> Value {
                 IconButton(aria_label="Menu" color="inherit" onClick=move |_:Value|{unsafe{APP_STATE.toggleDrawer()};}) {
                     Icon{"menu"}
                 }
+
+             img(src="./img/logos/logo.png" className="logo"){}
              Tabs(value=unsafe{APP_STATE.tab}  onChange=move |_:Value, value:i32|{unsafe{APP_STATE.tabChange(value)}} scrollable=true scrollButtons="auto") {
                 Tab(label="Graph Editor") {}
                 Tab(label="Individuals") {}
@@ -251,7 +336,7 @@ fn AppNavigation(props:Value) -> Value {
                             }
                             ListItemText(primary="Home"){}
                         }
-                        ListItem (button=true onClick=move |_:Value|{unsafe{APP_STATE.toggleDrawer()}; let node = String::from("none"); get_node(&node);}) {
+                        ListItem (button=true onClick=move |_:Value|{unsafe{APP_STATE.toggleDrawer()}; let node = String::from("none");}) {
                             ListItemIcon {
                                 Icon{"assignment"}
                             }
@@ -295,6 +380,10 @@ fn main() -> Result<(), Error>{
 
     react!{Base, Homepage, AppNavigation}
     render("app", html!{Base {}});
+
+    react! {GraphNodesPage};
+    render("app1", html! {GraphNodesPage{}});
+    js!(d3interface.render(););
 
     stdweb::event_loop();
     Ok(())
